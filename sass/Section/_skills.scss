@@ -1,0 +1,49 @@
+.wrapper-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  background-color: $soft-skills-bgc;
+  padding: 80px;
+  border-radius: 50%;
+
+  p {
+    padding: 25px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: $column-text-color;
+  }
+
+  p:hover {
+    font-weight: bold;
+    color: $skill-paragraph-hover-color;
+    cursor: default;
+  }
+}
+
+.wrapper-skills.hard-skills {
+  width: 32%;
+}
+
+@media(max-width:1030px) {
+  .skills {
+
+    .wrapper-skills {
+      width: 70%;
+    }
+  }
+
+  .wrapper-skills.hard-skills {
+    width: 50%;
+  }
+}
+
+@media(max-width:660px) {
+  .skills {
+    .wrapper-skills {
+      width: 90%;
+      border-radius: 50%;
+    }
+  }
+}

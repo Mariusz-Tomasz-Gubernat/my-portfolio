@@ -1,0 +1,109 @@
+nav {
+  width: 100vw;
+  position: fixed;
+  top: -60px;
+  left: 0;
+  background-color: $nav-bgc;
+  font-family: $font-header;
+  z-index: 1;
+
+  ul {
+    display: flex;
+
+    li {
+      display: inline-block;
+      width: 25%;
+      list-style: none;
+      text-align: center;
+      font-family: $font-header;
+
+      a {
+        color: $navLink-color;
+        text-decoration: none;
+        width: 100%;
+        display: inline-block;
+        padding: 20px;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        outline: none;
+        transition: .5s;
+      }
+    }
+  }
+}
+
+nav a:hover {
+  background-color: $nav-hover-bgc;
+  color: $nav-hover-color;
+}
+
+
+.fa-bars {
+  font-size: 30px;
+  color: $hamburger-color;
+  z-index: 3;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.fa-bars.active {
+  animation: changePositionBars .3s linear both;
+}
+
+@keyframes changePositionBars {
+  0% {
+    top: 20px;
+    left: 20px;
+  }
+
+  100% {
+    top: 80px;
+    left: 40px;
+  }
+}
+
+nav.active {
+  animation: showMenu .3s linear both;
+}
+
+@keyframes showMenu {
+  0% {
+    top: -250px;
+    left: 0;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@media(max-width:830px) {
+
+  /****************  NAVIGATION **************/
+  nav {
+    top: -240px;
+
+    ul {
+      flex-direction: column;
+
+      li {
+        width: 100%;
+      }
+    }
+  }
+
+  @keyframes changePositionBars {
+    0% {
+      top: 20px;
+      left: 20px;
+    }
+
+    100% {
+      top: 20px;
+      left: 20px;
+    }
+  }
+}

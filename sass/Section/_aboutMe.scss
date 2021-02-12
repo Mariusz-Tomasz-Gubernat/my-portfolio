@@ -1,0 +1,76 @@
+.about-me {
+  .wrapper-columns {
+    padding: 0 50px 100px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      color: $column-text-color;
+      border-radius: 10%;
+      box-shadow: $box-shadow-grey;
+      transition: linear 0.5s;
+    }
+
+    p {
+      border-radius: 10%;
+      text-align: center;
+      flex-grow: 1;
+      padding: 40px;
+      background-color: $aboutMe-paragraph-bgc;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+      line-height: 35px;
+    }
+
+    div:hover {
+      cursor: default;
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media(max-width:1030px) {
+  .about-me {
+    .wrapper-columns {
+      div {
+        width: 80%;
+        margin: 50px;
+      }
+
+      div:hover {
+        margin: 100px 0;
+      }
+
+      p {
+        font-size: 25px;
+        line-height: 45px;
+      }
+
+      div:hover {
+        margin: 50px;
+      }
+    }
+  }
+}
+
+@media(max-width: 660px) {
+  .about-me {
+    .wrapper-columns {
+      padding: 0;
+      width: 100%;
+
+      div {
+        width: 100%;
+
+        p {
+          padding: 50px 15px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

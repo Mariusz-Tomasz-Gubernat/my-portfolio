@@ -1,0 +1,47 @@
+footer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: $footer-bgc;
+
+  h1,
+  h3,
+  p {
+    padding: 30px;
+    font-size: 20px;
+    color: $footer-text-color;
+    font-family: $font-header;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  h1,
+  h3,
+  p {
+    font-size: 25px;
+  }
+}
+
+@media(max-width:660px) {
+  footer {
+
+    h1,
+    h3,
+    p {
+      padding: 15px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media(max-width:320px) {
+  footer {
+    h3 {
+      font-size: 18px;
+    }
+  }
+}
