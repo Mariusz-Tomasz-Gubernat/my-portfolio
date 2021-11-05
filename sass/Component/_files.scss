@@ -1,0 +1,21 @@
+.files {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 100px;
+    flex-wrap: wrap;
+
+    .section-title {
+        width: 100%;
+    }
+
+    a {
+        margin: 30px 50px;
+        display: inline-block;
+        text-decoration: none;
+        color: $header-text-color;
+        font-size: 16px;
+        background-color: #4169e1;
+        padding: 20px 50px;
+        border-radius: 47%;
+    }
+}

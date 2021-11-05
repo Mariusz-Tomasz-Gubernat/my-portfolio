@@ -4,9 +4,19 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $body-bgc;
   font-family: $font-text;
+}
+
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .section-title {
